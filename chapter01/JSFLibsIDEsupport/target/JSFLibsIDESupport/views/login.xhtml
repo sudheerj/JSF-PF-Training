@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>JSF and PF Login Example</title>
+</h:head>
+<h:body>
+	<h3>JSF and PF Login Example - login.xhtml</h3>
+	<h:form>
+		<p:growl id="growl" showDetail="true" life="3000" />
+		<h:panelGrid columns="2" cellpadding="5">
+			<h:outputLabel for="username" value="Username:" />
+			<p:inputText value="#{loginBean.username}" 
+					id="username" required="true" title="Enter First Name" />
+			<h:outputLabel for="password" value="Password:" />
+			<p:password value="#{loginBean.password}" 
+					id="password" required="true" title="Enter Last Name" />
+			
+			<f:facet name="footer">
+				<p:commandButton id="loginButton" value="Login" update="growl" 
+					action="#{loginBean.login}" ajax="false" />
+			</f:facet>
+			<pe:tooltip global="true" myPosition="left center" atPosition="right center"/>
+		</h:panelGrid>
+	</h:form>
+	<ui:debug hotkey="A" />
+</h:body>
+</html>

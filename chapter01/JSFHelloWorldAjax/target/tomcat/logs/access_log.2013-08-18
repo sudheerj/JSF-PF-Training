@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:49:51 +0530] "GET /JSFHelloWorldAjax HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:49:54 +0530] "GET /JSFHelloWorldAjax/ HTTP/1.1" 200 1521 http-bio-8080-exec-2 2879
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:49:55 +0530] "GET /JSFHelloWorldAjax/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 - http-bio-8080-exec-3 55
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:50:11 +0530] "POST /JSFHelloWorldAjax/views/hellouser.xhtml HTTP/1.1" 200 992 http-bio-8080-exec-4 80
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:51:08 +0530] "GET /JSFHelloWorldAjax/ HTTP/1.1" 200 1572 http-bio-8080-exec-5 24
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:51:08 +0530] "GET /JSFHelloWorldAjax/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 - http-bio-8080-exec-6 2
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:51:25 +0530] "GET /JSFHelloWorldAjax/ HTTP/1.1" 200 1572 http-bio-8080-exec-7 9
+0:0:0:0:0:0:0:1 - - [18/Aug/2013:18:51:25 +0530] "GET /JSFHelloWorldAjax/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 - http-bio-8080-exec-8 4
