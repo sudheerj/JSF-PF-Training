@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<!-- Lifecycle phaselistener -->
+   <lifecycle>
+    <phase-listener>com.sudheer.debug.utils.LifeCycleListener</phase-listener>
+	</lifecycle>
+	<!-- MyConverter -->
+	<converter>
+    <converter-id>myConverter</converter-id>
+    <converter-class>com.sudheer.debug.converter.MyConverter</converter-class>
+	</converter>
+	<!-- MyValidator -->
+	<validator>
+    <validator-id>myValidator</validator-id>
+    <validator-class>com.sudheer.debug.validator.MyValidator</validator-class>
+	</validator>
+	<!-- Managed bean configuration -->
+	<managed-bean>
+    <managed-bean-name>debugBean</managed-bean-name>
+    <managed-bean-class>com.sudheer.debug.beans.DebugBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+</faces-config>
