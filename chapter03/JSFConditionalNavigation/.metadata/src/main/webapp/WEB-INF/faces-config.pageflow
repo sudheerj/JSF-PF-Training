@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13780276030450" configfile="/JSFConditionalNavigation/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="start.xhtml" id="pf13780277077951" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13780277077952 pf13780277077953 pf13780277077954" path="/views/start.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="ordermore.xhtml" id="pf13780277077955" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf13780277077952" path="/views/ordermore.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="payment.xhtml" id="pf13780277077956" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf13780277077953" path="/views/payment.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register.xhtml" id="pf13780277077957" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf13780277077954" path="/views/register.xhtml"/>
+  <links id="pf13780277077952" target="pf13780277077955" source="pf13780277077951" outcome="payment" redirect="true"/>
+  <links id="pf13780277077953" target="pf13780277077956" source="pf13780277077951" outcome="payment" redirect="true"/>
+  <links id="pf13780277077954" target="pf13780277077957" source="pf13780277077951" outcome="payment" redirect="true"/>
+</pageflow:Pageflow>
