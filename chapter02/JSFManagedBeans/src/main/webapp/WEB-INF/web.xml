@@ -10,7 +10,7 @@
 	<!-- 
   <context-param>
     <param-name>javax.faces.CONFIG_FILES</param-name>
-    <param-value>/WEB-INF/manage-beans.xml</param-value>
+    <param-value>/WEB-INF/managed-beans.xml</param-value>
   </context-param>
    -->
 	<!-- Welcome page -->
@@ -22,7 +22,7 @@
         com.sun.faces.config.ConfigureListener
     </listener-class>
    </listener>
-	<!-- JSF mapping -->
+	<!-- JSF Faces Servlet mapping -->
   <servlet>
     <servlet-name>Faces Servlet</servlet-name>
     <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
