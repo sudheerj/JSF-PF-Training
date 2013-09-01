@@ -10,7 +10,7 @@
 	<!-- 
   <context-param>
     <param-name>javax.faces.CONFIG_FILES</param-name>
-    <param-value>WEB-INF/manage-beans.xml</param-value>
+    <param-value>/WEB-INF/manage-beans.xml</param-value>
   </context-param>
    -->
 	<!-- Welcome page -->
