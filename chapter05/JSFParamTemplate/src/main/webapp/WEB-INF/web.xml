@@ -8,7 +8,7 @@
 	</context-param>	
 	<!-- Welcome page -->
 	<welcome-file-list>
-		<welcome-file>views/default.xhtml</welcome-file>
+		<welcome-file>views/page1.xhtml</welcome-file>
 	</welcome-file-list>
 	<listener>
     <listener-class>
