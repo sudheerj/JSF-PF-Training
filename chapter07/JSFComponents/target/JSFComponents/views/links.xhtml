@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+    <h:body>
+    	
+    	<h1>JSF link, commandLink and outputLink example</h1>
+    	
+    	<h:form>
+    	<ol>
+	    	<li>
+	    		<h:link value="linksresponse page" outcome="linksresponse" />
+	    	</li>
+	    	<li>
+	    		<h:link value="linksresponse page + Param " outcome="linksresponse" >
+	    			<f:param name="linkControllername" value="JSFGuy" />
+	    		</h:link>
+	    	</li>
+	    	<li>
+	    		<h:link outcome="linksresponse" >
+	    			<h:graphicImage library="images" name="help.png" />
+	    		</h:link>
+	    	</li>
+	    	
+	    	<li>
+	    		<h:commandLink value="linksresponse page" />
+	    	</li>
+	    	<li>
+	    		<h:commandLink action="#{linkController.golinksresponsePage}" value="linksresponse page" />
+	    	</li>
+	    	<li>
+	    		<h:commandLink action="#{linkController.golinksresponsePage}" value="linksresponse page + Param ">
+	    			<f:param name="linkControllername" value="JSFGuy" />
+	    		</h:commandLink>
+	    	</li>
+	    	<li>
+	    		<h:commandLink action="#{linkController.golinksresponsePage}">
+	    			<h:graphicImage library="images" name="help.png" />
+	    		</h:commandLink>
+	    	</li>
+	    	<li>
+	    		<h:outputLink>
+	    			linksresponse page
+	    		</h:outputLink>
+	    	</li>
+	    	<li>
+	    		<h:outputLink value="linksresponse.xhtml" >
+	    			linksresponse page
+	    		</h:outputLink>
+	    	</li>
+	    	<li>
+	    		<h:outputLink value="linksresponse.xhtml">
+	    			<h:outputText value="linksresponse page" />
+	    			<f:param name="linkControllername" value="JSFGuy" />
+	    		</h:outputLink>
+	    	</li>
+	    	<li>
+	    		<h:outputLink value="linksresponse.xhtml">
+	    			<h:graphicImage library="images" name="help.png" />
+	    		</h:outputLink>
+	    	</li>
+    	</ol>
+    	</h:form>
+    	
+    </h:body>
+
+</html>
