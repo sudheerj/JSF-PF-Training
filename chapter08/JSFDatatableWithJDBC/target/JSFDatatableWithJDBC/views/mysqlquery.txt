@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS `sudheerdb`.`customer`;
+CREATE TABLE  `sudheerdb`.`customer` (
+  `CUSTOMER_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `NAME` VARCHAR(45) NOT NULL,
+  `ADDRESS` VARCHAR(255) NOT NULL,
+  `CREATED_DATE` datetime NOT NULL,
+  PRIMARY KEY (`CUSTOMER_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+ 
+INSERT INTO sudheerdb.customer(customer_id, name, address, created_date) 
+VALUES(1, 'sudheer1', 'address1', now());
+INSERT INTO sudheerdb.customer(customer_id, name, address, created_date) 
+VALUES(2, 'sudheer2', 'address2', now());
+INSERT INTO sudheerdb.customer(customer_id, name, address, created_date) 
+VALUES(3, 'sudheer3', 'address3', now());
+INSERT INTO sudheerdb.customer(customer_id, name, address, created_date) 
+VALUES(4, 'sudheer4', 'address4', now());
+INSERT INTO sudheerdb.customer(customer_id, name, address, created_date) 
+VALUES(5, 'sudheer5', 'address5', now());
